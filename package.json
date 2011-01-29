@@ -1,0 +1,19 @@
+{
+	"name": "packer",
+	"description": "Simple port of /packer/ by Dean Edwards",
+	"version": "0.0.3",
+	"repository": "https://github.com/evanw/packer",
+	"author": "Evan Wallace",
+	"main": "packer",
+	"dependencies": {
+		"jsdom": ">= 0.1.23",
+		"htmlparser": ">= 1.7.3",
+		"nomnom": ">= 0.1.2"
+	},
+	"bin": {
+		"packer" : "./cli.js"
+	},
+	"engines": {
+	    "node": ">= 0.3.7"
+	}
+}
