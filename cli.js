@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var fs = require('fs');
 var packer = require('packer');
 var args = require('nomnom').parseArgs([
