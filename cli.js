@@ -2,25 +2,25 @@
 
 var fs = require('fs');
 var packer = require('packer');
-var args = require('nomnom').parseArgs([
-	{
-		name: 'input_file',
-		string: '-i FILE',
+var args = require('nomnom').opts({
+    input_file: {
+        abbr: 'i',
 		help: 'Input file (default stdin)'
-	}, {
-		name: 'output_file',
-		string: '-o FILE',
-		help: 'Output file (default stdout)'
-	}, {
-		name: 'base62',
-		string: '-b',
+    },
+    base62: {
+        abbr: 'b',
+        flag: true,
 		help: 'Base62 encode'
-	}, {
-		name: 'shrink',
-		string: '-s',
+    },
+    output_file: {
+		abbr: 'o',
+		help: 'Output file (default stdout)'
+    },
+    shrink: {
+		abbr: 's',
 		help: 'Shrink variables'
 	}
-]);
+}).parseArgs();
 
 var data = '';
 
