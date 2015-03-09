@@ -6,7 +6,7 @@
 	"author": "Evan Wallace",
 	"main": "packer",
 	"dependencies": {
-		"jsdom": ">= 0.1.23",
+		"jsdom": ">= 0.1.23 < 4.0.0",
 		"htmlparser": ">= 1.7.3",
 		"nomnom": ">= 1.0.0"
 	},
