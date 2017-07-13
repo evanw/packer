@@ -1,3 +1,7 @@
+:warning: :warning: :warning: **DO NOT USE THIS** :warning: :warning: :warning:
+
+I threw this up on npm a long time ago but there are better options now. Packer appears to be unsupported and has bugs like [this](https://github.com/evanw/packer/issues/9) that cause it to generate invalid JavaScript. I recommend using a community-supported JavaScript minifier such as [uglify](https://github.com/mishoo/UglifyJS2/) instead. I'm only keeping this page up on GitHub because some packages likely depend on this package and may attempt to navigate here.
+
 # packer.js
 
 This is a simple port of [/packer/](http://dean.edwards.name/packer/) by Dean Edwards to node.js.
